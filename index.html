@@ -4,17 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Ekta | Computer Engineering Student</title>
+    <title>Ekta Bhotmange | Computer Engineering Student</title>
+
+    <meta
+        name="description"
+        content="Portfolio of Ekta Bhotmange — Computer Engineering student and aspiring software developer."
+    >
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Navigation -->
+    <!-- ===== NAVBAR ===== -->
     <header>
         <nav class="navbar">
-            <h2 class="logo">Ekta.</h2>
+
+            <a href="#home" class="logo">
+                EB<span>.</span>
+            </a>
 
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
@@ -24,129 +32,229 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
 
-            <button id="themeToggle">🌙</button>
+            <button id="themeToggle" aria-label="Toggle theme">
+                🌙
+            </button>
+
         </nav>
     </header>
 
-    <!-- Hero -->
-    <section id="home" class="hero">
 
-        <div class="hero-content">
-            <p class="intro">Hello, I'm</p>
+    <!-- ===== HERO ===== -->
+    <main>
 
-            <h1>Ekta Bhotmange</h1>
+        <section id="home" class="hero">
 
-            <h2>Computer Engineering Student</h2>
+            <div class="hero-content">
 
-            <p>
-                I am passionate about web development, programming
-                and building modern digital experiences.
+                <p class="intro">Hello, I'm</p>
+
+                <h1>Ekta Bhotmange</h1>
+
+                <h2>Computer Engineering Student & Aspiring Software Developer</h2>
+
+                <p>
+                    I build clean, responsive and user-focused web experiences
+                    while continuously improving my skills in software development,
+                    frontend technologies and modern web tools.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#projects" class="btn">
+                        View My Work
+                    </a>
+
+                    <a href="#contact" class="btn secondary-btn">
+                        Contact Me
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ===== ABOUT ===== -->
+        <section id="about">
+
+            <h2>About Me</h2>
+
+            <div class="about-content">
+
+                <p>
+                    I am a Computer Engineering student passionate about technology,
+                    programming and building practical projects. I enjoy learning
+                    new technologies and turning ideas into functional digital
+                    experiences.
+                </p>
+
+                <p>
+                    Currently, I am focusing on strengthening my skills in web
+                    development, Git & GitHub, programming fundamentals and
+                    software development practices.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ===== SKILLS ===== -->
+        <section id="skills">
+
+            <h2>Skills</h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>Frontend Development</h3>
+                    <p>
+                        HTML, CSS, JavaScript, responsive layouts and
+                        modern user interfaces.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Programming</h3>
+                    <p>
+                        C++, JavaScript and programming fundamentals
+                        with a focus on problem solving.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Tools & Technologies</h3>
+                    <p>
+                        Git, GitHub, VS Code, REST APIs and
+                        basic CI/CD concepts.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ===== PROJECTS ===== -->
+        <section id="projects">
+
+            <h2>Featured Projects</h2>
+
+            <div class="cards">
+
+                <article class="card project-card">
+
+                    <span class="project-tag">Web Development</span>
+
+                    <h3>Personal Portfolio</h3>
+
+                    <p>
+                        A responsive personal portfolio website designed
+                        to showcase my skills, projects and professional
+                        profile.
+                    </p>
+
+                    <div class="project-buttons">
+
+                        <a
+                            href="https://github.com/EktaBhotmange/MERN-Task-1"
+                            target="_blank"
+                            class="btn"
+                        >
+                            GitHub
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="card project-card">
+
+                    <span class="project-tag">Machine Learning</span>
+
+                    <h3>Rainfall Prediction</h3>
+
+                    <p>
+                        A machine learning project focused on predicting
+                        rainfall using relevant environmental data.
+                    </p>
+
+                </article>
+
+
+                <article class="card project-card">
+
+                    <span class="project-tag">Full Stack</span>
+
+                    <h3>Smart Expense Tracker</h3>
+
+                    <p>
+                        A personal finance management application for
+                        tracking income, expenses and financial activity.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ===== CONTACT ===== -->
+        <section id="contact">
+
+            <h2>Let's Connect</h2>
+
+            <p class="contact-intro">
+                Have an opportunity or want to connect? Send me a message.
             </p>
 
-            <div class="hero-buttons">
-                <a href="#projects" class="btn">View Projects</a>
-                <a href="#contact" class="btn secondary-btn">Contact Me</a>
-            </div>
-        </div>
+            <form id="contactForm">
 
-    </section>
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    required
+                >
 
-    <!-- About -->
-    <section id="about">
-        <h2>About Me</h2>
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Your Email"
+                    required
+                >
+
+                <textarea
+                    name="message"
+                    placeholder="Your Message"
+                    required
+                ></textarea>
+
+                <button type="submit" class="btn">
+                    Send Message
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
 
         <p>
-            I am a Computer Engineering student interested in software
-            development and modern web technologies. I enjoy learning
-            new technologies and creating practical projects.
+            © 2026 Ekta Bhotmange. Built with HTML, CSS & JavaScript.
         </p>
-    </section>
 
-    <!-- Skills -->
-    <section id="skills">
-        <h2>My Skills</h2>
-
-        <div class="cards">
-
-            <div class="card">
-                <h3>HTML5</h3>
-                <p>Semantic and accessible web structure.</p>
-            </div>
-
-            <div class="card">
-                <h3>CSS3</h3>
-                <p>Responsive layouts, Flexbox and modern styling.</p>
-            </div>
-
-            <div class="card">
-                <h3>JavaScript</h3>
-                <p>Interactive and dynamic web functionality.</p>
-            </div>
-
-            <div class="card">
-                <h3>Git & GitHub</h3>
-                <p>Version control and project collaboration.</p>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects">
-        <h2>My Projects</h2>
-
-        <div class="cards">
-
-            <div class="card">
-                <h3>Smart Expenses Tracker</h3>
-                <p>
-                    A web-based application for managing income,
-                    expenses and personal finances.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Rainfall Prediction</h3>
-                <p>
-                    A machine learning project for predicting rainfall
-                    using environmental data.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Personal Portfolio</h3>
-                <p>
-                    A responsive portfolio website built using
-                    HTML, CSS and JavaScript.
-                </p>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-
-        <form id="contactForm">
-
-            <input type="text" placeholder="Your Name" required>
-
-            <input type="email" placeholder="Your Email" required>
-
-            <textarea placeholder="Your Message" required></textarea>
-
-            <button type="submit" class="btn">Send Message</button>
-
-        </form>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 Ekta Bhotmange. All Rights Reserved.</p>
     </footer>
+
 
     <script src="script.js"></script>
 
 </body>
-</html>
