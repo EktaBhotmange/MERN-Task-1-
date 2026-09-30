@@ -22,7 +22,7 @@ A modern and responsive personal portfolio website built to showcase my skills, 
 
 ## 🌐 Live Website
 
-[View My Portfolio](https://ektabhotmange.github.io/MERN-Task-1/)
+[View My Portfolio](https://ektabhotmange.github.io/MERN-Task-1-/)
 
 ## 📂 Project Structure
 
